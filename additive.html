@@ -1,0 +1,39 @@
+<h1>additive instrument</h2>
+<p>ashley tran</p>
+
+<p>elements</p>
+<ul>
+<li>10 - sinusoid playback on demand from the sequencer</li>
+<li>20 - definition of all harmonics</li>
+<li>30 - envelope generation</li>
+</ul>
+
+<p> sample score file </p>
+<p>
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="2">
+     <instrument instrument="AdditiveInstrument">
+	  <note measure="1" beat="1" duration="0.33" note="C4" attack="0.05" release="0.05" a1="0.1"/>
+          <note measure="1" beat="2" duration="0.33" note="E4" attack="0.05" release="0.05" a2="0.1"/>
+          <note measure="2" beat="1" duration="0.5" note="G4" attack="0.05" release="0.05"/>
+          <note measure="2" beat="2" duration="0.5" note="C5" attack="0.05" release="0.05"/>
+          <note measure="3" beat="1" duration="0.2" note="D4" attack="0.05" release="0.05" a5="0.05"/>
+          <note measure="3" beat="2" duration="0.2" note="F4" attack="0.05" release="0.05"/>
+          <note measure="4" beat="1" duration="0.33" note="A4" attack="0.05" release="0.05"/>
+          <note measure="4" beat="2" duration="0.33" note="D5" attack="0.05" release="0.05"/>
+          <note measure="5" beat="1" duration="0.5" note="C4" attack="0.05" release="0.05"/>
+          <note measure="5" beat="2" duration="0.5" note="E4" attack="0.05" release="0.05"/>
+          <note measure="6" beat="1" duration="1" note="G4" attack="0.05" release="0.05"/>
+          <note measure="6" beat="2" duration="1" note="C5" attack="0.05" release="0.05"/>
+	  <note measure="7" beat="1" duration="0.7" note="D4" attack="0.05" release="0.05"/>
+          <note measure="7" beat="2" duration="0.7" note="E4" attack="0.05" release="0.05"/>
+          <note measure="8" beat="1" duration="0.5" note="G4" attack="0.05" release="0.05"/>
+          <note measure="8" beat="2" duration="0.5" note="A5" attack="0.05" release="0.05"/>
+	  <note measure="9" beat="1" duration="0.5" note="C4" attack="0.03" release="0.05"/>
+          <note measure="9" beat="2" duration="0.5" note="C5" attack="0.03" release="0.05"/>
+          <note measure="10" beat="1" duration="1.5" note="G4" attack="0.05" release="0.03"/>
+          <note measure="10" beat="2" duration="1.5" note="G5" attack="0.05" release="0.03" decay="0.10" sustain="0.5"/>
+     </instrument>
+</score>
+</p>
+<p> sample wav file </p>
