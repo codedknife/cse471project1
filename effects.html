@@ -4,8 +4,7 @@
 <p>elements</p>
 <ul>
 <li>10 - component passes audio: the audio frame will be processed with the indicated effect in XML.</li>
-<li>20 - 1 effect</li>
-<li>30 - 3 effects</li>
+<li>20 - 1 effect: noisegate</li>
 </ul>
 
 <p> demonstration </p>
@@ -13,12 +12,10 @@
 <textarea>
 <?xml version="1.0" encoding="utf-8"?>
 <score bpm="120" beatspermeasure="2">
+  <instrument instrument="AdditiveInstrument" noisegate="1">
+  </instrument>
+  <instrument instrument="NoiseGate">
+    <note threshold="0.01"/>
+  </instrument>
 </score>
 </textarea>
-
-<figure>
-  <figcaption>sample .wav file</figcaption>
-  <audio controls src="https://github.com/codedknife/cse471project1/blob/main/effects.wav?raw=true">
-    <a href="https://github.com/codedknife/cse471project1/blob/main/effects.wav?raw=true"> download audio </a>
-  </audio>
-</figure>
